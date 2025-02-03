@@ -1,0 +1,52 @@
+/* setting theme colors */
+:root {
+  --primary-color: rgb(18, 18, 18);
+  --secondary-color: rgb(255, 255, 255);
+  --theme-color: rgb(79, 199, 238);
+}
+/* resetting the html doc */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "Lexend Giga", serif;
+}
+.navbar{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    border-color: var(--secondary-color);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    white-space: nowrap;
+    transition: all 200ms ease-in-out;
+}
+
+.content{
+margin: 5vw;
+}
+ul{
+  list-style: none;
+}
+.features{
+display: flex;
+justify-content: space-around;
+text-align: center;
+}
+.features > li{
+  flex: 1;
+  border-color: var(--secondary-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}

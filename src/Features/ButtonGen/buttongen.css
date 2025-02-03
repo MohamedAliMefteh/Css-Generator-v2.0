@@ -1,0 +1,92 @@
+/* setting theme colors */
+:root {
+  --primary-color: rgb(18, 18, 18);
+  --secondary-color: rgb(255, 255, 255);
+  --theme-color: rgb(79, 199, 238);
+}
+/* resetting the html doc */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.buttongen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+
+
+}
+
+.buttonsettings,
+.previewbutton {
+  width: 40%;
+  min-height: 500px;
+}
+.previewbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonsettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border-style: solid;
+  border-width: 1px;
+
+}
+.buttonsettings > div {
+  background-color: rgb(29, 29, 29);
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.params {
+  display: flex;
+  flex-direction: column;
+}
+.secondaryinput {
+  width: 5%;
+  border: none;
+  padding: 2px;
+  border-radius: 00 0 10px 0;
+}
+.secondaryinput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.maininput {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+.maininput::-webkit-slider-runnable-track {
+  background-color: var(--secondary-color);
+  border-radius: 10px 10px 10px 0;
+}
+.maininput::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  background-color: var(--theme-color);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem 1rem 1rem 0rem;
+}
+input[type="text"] {
+  background-color: var(--secondary-color);
+}
+.buttoncssresult{
+  flex-grow: 1;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 5px;
+}
