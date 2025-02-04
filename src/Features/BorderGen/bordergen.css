@@ -11,7 +11,7 @@
     text-decoration: none;
   }
   
-  .shadowgen {
+  .bordergen {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -20,17 +20,17 @@
     gap: 10px;
   
   }
-  .shadowsettings,
-  .previewshadow {
+  .bordersettings,
+  .previewborder {
     min-height: 500px;
   }
-  .previewshadow {
+  .previewborder {
     display: flex;
     justify-content: center;
     align-items: center;
 
   }
-  .shadowsettings {
+  .bordersettings {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +39,7 @@
     border-width: 1px;
   
   }
-  .shadowsettings > div {
+  .bordersettings > div {
     background-color: rgb(29, 29, 29);
     padding: 5px;
     border-radius: 10px;
@@ -51,8 +51,8 @@
     display: flex;
     flex-direction: column;
   }
-
-  .shadowcssresult{
+ 
+  .bordercssresult{
     padding: 5px;
     border-style: solid;
     border-width: 1px;
@@ -60,20 +60,20 @@
     font-size: 1.2rem;
   }
   @media (max-width: 1160px) {
-    .shadowgen {
+    .bordergen {
       display: grid;
       grid-template-columns: 1fr ;
       grid-template-rows: 1fr 1fr 1fr;
     }
-    .shadowsettings,.previewshadow,.shadowcssresult{
+    .bordersettings,.bordershadow,.bordercssresult{
       width: 80vw;
     }
-    .shadowcssresult{
+    .bordercssresult{
       font-size: 0.8rem;
     }
   }
   @media (max-width: 379px) {
-    .shadowcssresult{
+    .bordercssresult{
       font-size: 0.6rem;
     }
     

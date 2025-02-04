@@ -53,8 +53,8 @@ const ShadowSetting = () => {
           type={"range"}
           value={value}
           dataref={"spreadRadius"}
-          min={0}
-          max={500}
+          min={-200}
+          max={200}
           onChangeHandler={onChangeHandler}
         />
       </div>
@@ -88,6 +88,14 @@ const ShadowSetting = () => {
           type={"color"}
           value={value}
           dataref={"boxColor"}
+          onChangeHandler={onChangeHandler}
+        />
+        <Input
+          title={"Background Color"}
+          classname={"backgroundcolor"}
+          type={"color"}
+          value={value}
+          dataref={"backgroundColor"}
           onChangeHandler={onChangeHandler}
         />
       </div>

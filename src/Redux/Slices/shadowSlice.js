@@ -8,6 +8,7 @@ const initialState = {
         shadowOpacity: 1,
         shadowColor: "#000000",
         boxColor: "#969696",
+        backgroundColor: "#ffffff",
     }
 }
 export const shadowSlice = createSlice({

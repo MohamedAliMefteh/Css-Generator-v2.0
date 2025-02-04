@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Components/Header";
 import ButtonGen from "./Features/ButtonGen/ButtonGen";
 import ShadowGen from "./Features/ShadowGen/shadowgen";
+import BorderGen from "./Features/BorderGen/BorderGen";
 
 function App() {
   const [section, setSection] = useState('buttongen')
@@ -22,6 +23,7 @@ function App() {
         <section >
           {section === 'buttongen' && <ButtonGen />}
           {section === 'shadowgen' && <ShadowGen />}
+          {section === 'bordergen' && <BorderGen />}
         </section>
       </div>
     </div>

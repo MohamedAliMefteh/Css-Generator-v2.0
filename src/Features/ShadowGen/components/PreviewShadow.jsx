@@ -12,7 +12,7 @@ const PreviewShadow = () => {
     boxShadow: `${value.horizontal}px ${value.vertical}px ${value.blurRadius}px ${value.spreadRadius}px ${shadowcolor}`,
   };
   return (
-    <div className="previewshadow">
+    <div className="previewshadow" style={{backgroundColor:`${value.backgroundColor}`}}>
       <div style={style}></div>
     </div>
   );
