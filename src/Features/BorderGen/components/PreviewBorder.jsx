@@ -7,7 +7,6 @@ const PreviewBorder = () => {
         height:`${value.height}px`,
         width:`${value.width}px`,
         borderRadius:`${value.topLeftBorder}px ${value.topRightBorder}px ${value.bottomRightBorder}px ${value.bottomLeftBorder}px `,
-        backgroundColor:'white'
     }
   return (
     <div className='previewborder'>

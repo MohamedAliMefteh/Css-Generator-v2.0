@@ -8,7 +8,6 @@ import BorderGen from "./Features/BorderGen/BorderGen";
 function App() {
   const [section, setSection] = useState('buttongen')
   const handleSection = (e) => {
-    console.log(e.target.id)
     setSection(e.target.id)
   }
   return (
